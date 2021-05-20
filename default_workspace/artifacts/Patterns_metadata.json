@@ -244,6 +244,31 @@
 				"type": "function"
 			},
 			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_dna1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_dna2",
+						"type": "uint256"
+					}
+				],
+				"name": "hybridChp",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"constant": true,
 				"inputs": [],
 				"name": "isOwner",
@@ -365,6 +390,12 @@
 		},
 		"userdoc": {
 			"methods": {
+				"createRandomChp(string)": {
+					"notice": "create a random chp"
+				},
+				"hybridChp(string,uint256,uint256)": {
+					"notice": "create a 50/50 hybrid with two dna samples"
+				},
 				"renounceOwnership()": {
 					"notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
 				}
@@ -373,7 +404,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"CaseHardenedPatterns.sol": "CaseHardenedPatterns"
+			"Patterns.sol": "Patterns"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -384,13 +415,6 @@
 		"remappings": []
 	},
 	"sources": {
-		"CaseHardenedPatterns.sol": {
-			"keccak256": "0x86b04417005022786817a8f1ffbe9ca57de37d30f68c616cfd19bbc671da9463",
-			"urls": [
-				"bzz-raw://9683fa875ed58cc79669008f9c55f0eb8369bd2803aa8b8900978783bfb5725d",
-				"dweb:/ipfs/QmXD5UaqESxX6u2DyaRa2Ju2QuS5eX8M8Q4prusDD8Patr"
-			]
-		},
 		"ERC721.sol": {
 			"keccak256": "0x4cb418aa98c81c8ca8e0286af0b271c9b7b32376f93993a81bdcf94dc47acba8",
 			"urls": [
@@ -403,6 +427,13 @@
 			"urls": [
 				"bzz-raw://e8f11612996616032f44968b1850c1e71a94a368094141a23f229f2c1a260990",
 				"dweb:/ipfs/QmXaxow6LX1FHFKXvMHbKrSn12csP81Fegmbu8HvhUd6MB"
+			]
+		},
+		"Patterns.sol": {
+			"keccak256": "0xf96bcad0af75afefc2a25b1a3d9f865c32bf3eb63bd8db83ab0cfec9dd766c57",
+			"urls": [
+				"bzz-raw://64c0be50414f0607305bfb4cb44c36744095c50f67d1655ea07d6261edbd8eed",
+				"dweb:/ipfs/QmW7VyEiowYAACstwT7DhvbMGycruqaHqRQS2BB6XL6kMa"
 			]
 		},
 		"SafeMath.sol": {
