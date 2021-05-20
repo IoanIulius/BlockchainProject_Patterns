@@ -43,10 +43,10 @@ contract Patterns is Ownable, ERC721 {
   }
   
 ///@notice create a 50/50 hybrid with two dna samples
-  function hybridChp(string memory _name,uint _dna1,uint _dna2) public
-  {         
-      uint newDNA = _dna1.div(10**(dnaDigits.div(2))).mul(10**dnaDigits.div(2)) + _dna2.div(10**(dnaDigits.div(2)));
-      _createChp(_name, newDNA);
+       
+   function hybridChp(string memory _name, uint _chpId1, uint _chpId2) public {
+    uint _newDna = chps[_chpId1].dna.div(10**(dnaDigits.div(2))).mul(10**dnaDigits.div(2)) + chps[_chpId2].dna % 10**(dnaDigits.div(2));
+    _createChp(_name, _newDna);
   }
   
   

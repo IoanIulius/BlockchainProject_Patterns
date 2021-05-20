@@ -253,12 +253,12 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "_dna1",
+						"name": "_chpId1",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_dna2",
+						"name": "_chpId2",
 						"type": "uint256"
 					}
 				],
@@ -430,10 +430,10 @@
 			]
 		},
 		"Patterns.sol": {
-			"keccak256": "0xf96bcad0af75afefc2a25b1a3d9f865c32bf3eb63bd8db83ab0cfec9dd766c57",
+			"keccak256": "0xefee2d8a6aff621572e764648edd7e24488682c571cb8986451d6452ad9a7368",
 			"urls": [
-				"bzz-raw://64c0be50414f0607305bfb4cb44c36744095c50f67d1655ea07d6261edbd8eed",
-				"dweb:/ipfs/QmW7VyEiowYAACstwT7DhvbMGycruqaHqRQS2BB6XL6kMa"
+				"bzz-raw://a2e9b31ebc79d7eff44d3aa6247e1f81d64e5ea58924d203c8a29043b57c41bf",
+				"dweb:/ipfs/QmetBNF3us2CUXL5weHKthHEWgbhpEtbxKZhz3uczX3evS"
 			]
 		},
 		"SafeMath.sol": {
